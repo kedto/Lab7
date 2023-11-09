@@ -14,21 +14,21 @@
 <body>
 
 <?php
-        require_once("dbInfo.php");
+//         require_once("dbInfo.php");
 
-        // create connection to database
-        $mysqli = new mysqli($hostname, $dbUser, $dbPassword, $db);
+//         // create connection to database
+//         $mysqli = new mysqli($hostname, $dbUser, $dbPassword, $db);
 
-        // check db connection
-        if ($mysqli -> connect_errno) {
-            echo "Failed to connect to MySQL: " . $mysqli -> connect_errno;
-            exit();
-        }
+//         // check db connection
+//         if ($mysqli -> connect_errno) {
+//             echo "Failed to connect to MySQL: " . $mysqli -> connect_errno;
+//             exit();
+//         }
 
-        // do something
-        $sqlstatement = "SELECT categories.catTitle,menu.title,menu.picFilename,menu.unitPrice,menu.itemID FROM menu LEFT JOIN categories ON menu.categoryFK = categories.catID";
-        $result = $mysqli -> query($sqlstatement);
-?>
+//         // do something
+//         $sqlstatement = "SELECT categories.catTitle,menu.title,menu.picFilename,menu.unitPrice,menu.itemID FROM menu LEFT JOIN categories ON menu.categoryFK = categories.catID";
+//         $result = $mysqli -> query($sqlstatement);
+// ?>
 
 <?php
     session_start();
